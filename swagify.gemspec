@@ -9,4 +9,9 @@ Gem::Specification.new do |s|
   s.files       = ["lib/swagify.rb"]
   s.homepage    = 'http://rubygems.org/gems/swagify'
   s.license     = 'MIT'
+
+  s.add_runtime_dependency "colorize"
+
+  s.add_development_dependency "rspec"
+  s.add_development_dependency "rake"
 end

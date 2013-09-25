@@ -28,4 +28,9 @@ class Swagify < Object
 	def self.warning
 		return "\u26A0"
 	end
+
+	# ##Colors
+	#
+	# We'll use the wonderful colorize gem
+	require 'colorize'
 end
