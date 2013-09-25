@@ -15,4 +15,11 @@ task :spec do
 	system "rspec --color"
 end
 
+desc "Generates the documentation using docco"
+task :document do
+	# Note: I would like to use rocco, but it's broken at the moment
+	# https://github.com/rtomayko/rocco/pull/97#commits-pushed-94f49b8
+	system "docco lib/*"
+end
+
 task :default => :spec
