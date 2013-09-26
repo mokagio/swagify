@@ -31,7 +31,7 @@ class Swagify < Object
 
 	# ##Colors
 	#
-	# We'll use the wonderful colorize gem
+	# We'll use the wonderful [colorize](https://github.com/fazibear/colorize) gem
 	require 'colorize'
 
 	# ##Power Symbols
