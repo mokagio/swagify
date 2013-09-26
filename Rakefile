@@ -33,7 +33,7 @@ task :webpage => [:document] do
 	system "git add ."
 	system "git commit -m 'Automatically generated new gh-pages version.'"
 	system "git push origin gh-pages"
-	puts Swagify::success + "Pushed to GitHub."
+	puts Swagify::success + " - Pushed to GitHub."
 	puts "Check http://mokagio.github.io/swagify, the new version should be online soon."
 end
 
