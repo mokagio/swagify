@@ -52,4 +52,33 @@ class Swagify < Object
 	def self.warning
 		return self.alert.yellow
 	end
+
+	# ##Misc
+	#
+	# Other fancy things
+
+	# `Swagify::gandalf_test_failed` returns an angry red Gandalf when your tests fail
+	# courtesy of Mr. [Tancredi](https://github.com/tancredi)
+	def self.gandalf_test_failed
+		gandalf = <<EOF
+  _   _        |          .
+  \\ . /    \\      /      / \\
+   | |         .         | |
+   | |   \\    / \\    /   | |
+   | | --    /   \\    -- | |
+   | |    __/_____\\__    | |
+   |_|      | o o |    (==_==)
+   (_)______\\( 0 )/______(_)
+   | |       (   )       | |
+   | | _/-.   \\ /  .-\\_   '
+.__|_|/___/_________\\__\\_______.
+|     '                 '      |
+|  YOU   SHALL   NOT   PASS!!  |
+|______________________________|
+        /__---____---__\\
+          '---'  '---'
+EOF
+		return gandalf.red
+	end
+
 end

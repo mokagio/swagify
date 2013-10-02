@@ -30,5 +30,29 @@ describe Swagify do
 				Swagify::warning.should eq "\u26A0".yellow
 			end
 		end
+
+		context "fancy symbols" do
+			it "has a static gandalf_test_failed method that returns a red angry gandalf" do
+				gandalf = <<EOF
+  _   _        |          .
+  \\ . /    \\      /      / \\
+   | |         .         | |
+   | |   \\    / \\    /   | |
+   | | --    /   \\    -- | |
+   | |    __/_____\\__    | |
+   |_|      | o o |    (==_==)
+   (_)______\\( 0 )/______(_)
+   | |       (   )       | |
+   | | _/-.   \\ /  .-\\_   '
+.__|_|/___/_________\\__\\_______.
+|     '                 '      |
+|  YOU   SHALL   NOT   PASS!!  |
+|______________________________|
+        /__---____---__\\
+          '---'  '---'
+EOF
+				Swagify::gandalf_test_failed.should eq gandalf.red
+			end
+		end
 	end
 end
